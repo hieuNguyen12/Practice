@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+   </head>
+   <style>
+   * {
+      box-sizing: border-box;
+   }
+   body {
+      margin: 0;
+      padding: 0;
+      font-family: arial;
+   }
+   .header { 
+      height: 260px;
+      text-align: center; 
+      padding-top: 70px; 
+      background-color: green;
+      color: white;
+   }
+   .nav-bar {
+      background-color: #333;
+      display: flex;
+   }
+   .nav-bar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none; 
+      text-align: center;
+
+   }
+   .main {
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .sideBar {
+      flex-basis: 30%;
+      padding: 15px;
+      background-color: gray;
+   }
+   .mainBar {
+      flex-basis: 70%;
+      padding: 20px;
+   }
+   #fakeimg {
+      background-color: #aaa;
+      height: 200px;
+      width: 100%;
+   }
+   @media screen and (max-width: 700px) {
+    .main, .nav-bar {   
+        flex-direction: column;
+    }
+   }
+   </style>
+   
+   <body>
+      <div class="header">
+         <h1>This is my website</h1>
+         <p>Some random text</p>
+      </div>
+
+      <div class="nav-bar">
+         <a href="#">Link 1</a>
+         <a href="#">Link 2</a>
+         <a href="#">Link 3</a>
+         <a href="#">Link 4</a>
+      </div>
+
+      <div class="main">
+         <div class="sideBar">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <p>Photo of me</p>
+            <div id="fakeimg"></div>
+         </div>
+         <div class="mainBar">
+            <h2>This is my Blog</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliquacitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in</p>
+            <div id="fakeimg"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+            <div id="fakeimg"></div>
+         </div>
+      </div>
+
+      <footer>
+         <p>Some text</p>
+      </footer>
+   </body>
+</html>
