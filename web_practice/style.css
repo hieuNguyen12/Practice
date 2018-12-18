@@ -1,0 +1,165 @@
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #ECECEC;
+}
+
+/* ------------------------------HEADER----------------------------------- */
+.header {
+	width: 100%;
+	height: 130px;
+	background-color: #003387;
+	color: white;
+	display: flex;
+}
+
+.header #main-logo {
+	display: flex; 
+	flex-direction: row; 
+	margin-left: 100px;
+}
+
+.header #school-brand{
+	display: flex;
+	flex-direction: column; 
+	justify-content: center; 
+	width: 680px;
+	height: 130px;
+}
+
+.header #school-img {
+	width: 90px;
+	height: 130px;
+	display: flex;
+	align-items: center;
+}
+
+.header #school-img #image {
+	width: 80px;
+	height: 78.53px;
+	background-image: url(img/logo.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.header #search-items {
+	display: flex; 
+	align-items: center;
+	width: 480px; 
+	justify-content: center; 
+}
+
+.header h1 {
+	text-transform: uppercase;
+	padding-top: 5px;
+	padding-bottom: 4px;
+	font-size: 42px;
+	line-height: 44px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+
+.header p {
+	font-size: 20px;
+	text-transform: uppercase; 
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	padding-bottom: 15px;
+	line-height: 22px;
+}
+
+
+/*-------------------------- NAVIGATION BAR ---------------------------*/
+.nav-bar {
+	margin-left: 75px;
+}
+.nav-bar li {
+	list-style: none; 
+}
+
+.nav-bar .main-bar {
+	float: left;
+}
+
+.nav-bar .main-bar li {
+	float: left;
+	background-color: #ECECEC;
+	position: relative;
+	padding: 12px 22px 12px; 	
+}
+
+.nav-bar .main-bar li a {
+	color: #191919;
+	text-decoration: none; 
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5em;
+}
+
+.nav-bar .dropdown .drop-nav {
+	position: absolute;
+	display: none; 
+	left: 50%; 
+	transform: translate(-50%, 0);
+}
+
+.nav-bar .main-bar .dropdown ul li a{
+	display: block; 
+    position: relative;
+    padding-right: 50px;
+    white-space: nowrap;
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 0.5em 1.25em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #191919;
+}
+
+.nav-bar .dropdown #school-nav li{
+	width: 216px;
+	padding: 0;
+}
+.nav-bar .dropdown #faculty-nav li{
+	width: 141px;
+	padding: 0;
+}
+.nav-bar .dropdown #ib-nav li{
+	width: 314px;
+	padding: 0;
+}
+.nav-bar .dropdown #activity-nav li{
+	width: 135px;
+	padding: 0;
+}
+
+
+.nav-bar .dropdown:hover .drop-nav {
+	display: block; 
+}
+
+
+
+
+
+.main .landing-slider {
+	width: 1160px; 
+	height: 382.8px;
+	background-image: url(img/landing.png);
+	background-size: 100.34885245901638%;
+    background-position: 0% 37.34939759036144%;
+	clear: both;
+
+}
+
+.footer #footer-img {
+	width: 287.5px;
+	height: 87.14px;
+	background-image: url(img/footer_logo.png);
+	background-size: cover;
+	background-position: center;
+}
