@@ -107,9 +107,13 @@ body {
 
 .nav-bar .dropdown .drop-nav {
 	position: absolute;
-	display: none; 
+	
 	left: 50%; 
 	transform: translate(-50%, 0);
+	height: 0;
+	overflow: hidden;
+	transition: 0.3s ease-in-out; 
+
 }
 
 .nav-bar .main-bar .dropdown ul li a{
@@ -145,7 +149,7 @@ body {
 
 
 .nav-bar .dropdown:hover .drop-nav {
-	display: block; 
+	height: 200px; 
 }
 
 
@@ -188,7 +192,60 @@ body {
 }
 
 
-.main .contents .infos-col  h2{
+.main .contents .main-col {
+	font-family: "Open Sans";
+	color: #191919;
+	width: 546px;
+	margin-right: 30px;
+}
+
+.main .contents .main-col #attention-text p{
+	font-weight: bold; 
+	display: block;
+	padding: 10px 0;
+}
+.main .contents .main-col #community-project h2{
+	display: block;
+	padding: 10px 0;
+	font-size: 32px;
+}
+.main .contents .main-col #community-project #button {
+	text-align: center; 
+	padding: 30px 0;
+}
+.main .contents .main-col #community-project #button a{
+	background-color: #003387;
+	color: white;
+	text-decoration: none; 
+	padding: 10px 30px;
+	border-radius: 30px;
+	font-size: 16px;
+}
+.main .contents .main-col #school-calendar h2{
+	font-size: 32px;
+	display: block;
+	padding-bottom: 20px ;
+}
+.main .contents .main-col #school-calendar iframe{
+	margin-bottom: 20px
+}
+.main .contents .main-col #jag-img img{
+	width: 546px; 
+	margin-bottom: 60px;
+}
+
+
+.main .contents .infos-col h2{
+	font-weight: 700;
+	color: #383838;
+	font-size: 30px;
+	line-height: 34px;
+}
+.main .contents .infos-col a{
+	color: #226EAD;
+	font-weight: bold; 
+}
+.main .contents .infos-col #security-notification h2{
 	width: 279.05px;
 	font-weight: 700;
 	color: #383838;
@@ -201,11 +258,6 @@ body {
 	font-size: 16px;
 	text-align: center; 
 } 
-.main .contents .infos-col #security-notification #message a{
-	color: #226EAD;
-	font-weight: bold; 
-}
-
 .main .contents .infos-col #chromebook p {
 	padding: 20px 0;
 }
@@ -213,13 +265,51 @@ body {
 	height: 100px;
 	text-align: right; 
 }
-.main .contents .infos-col #chromebook #message2 div {
+.main .contents .infos-col #chromebook #message2 a{
+	display: inline-block;
 	padding: 10px;
 }
-.main .contents .infos-col #chromebook #message2 div a{
-	font-weight: bold;
-	color: #226EAD;
+.main .contents .infos-col #guidance h2 {
+	padding: 5px 0;
 }
+.main .contents .infos-col #guidance div {
+	text-align: right; 
+	height: 205px
+}
+.main .contents .infos-col #guidance div a {
+	display: inline-block;
+	padding: 5px 0;
+}
+
+.main .contents .infos-col #ib-assessment h2 {
+	padding: 10px 0;
+}
+.main .contents .infos-col #ib-assessment div {
+	text-align: right; 
+}
+.main .contents .infos-col #ib-assessment div a {
+	display: inline-block;
+	padding: 5px 0;
+}
+.main .contents .infos-col #info-box {
+	background-color: #003387;
+	margin-top: 10px;
+	color: white;
+	padding: 0 10px;
+	height: 474px;
+}
+.main .contents .infos-col #info-box h3{
+	font-size: 24px;
+	font-weight: 600; 
+}
+.main .contents .infos-col #info-box p{
+	font-size: 16px;
+	font-weight: bold; 
+}
+
+
+
+
 
 
 
@@ -227,10 +317,26 @@ body {
 	width: 546px;
 	height: 470px;
 	margin-right: 35px;
+
 }
 
 
-
+.footer {
+	background-color: #003387;
+	color: white;
+	font-family: "Open Sans";
+	display: flex; 
+	flex-direction: row;
+	flex: 1 0 auto;
+	padding: 30px;
+}
+.footer #school-info {
+	width: 67%;
+	margin-left: 50px;
+}
+.footer #school-info h2{
+	padding-bottom: 20px;
+}
 
 .footer #footer-img {
 	width: 287.5px;
@@ -238,4 +344,6 @@ body {
 	background-image: url(img/footer_logo.png);
 	background-size: cover;
 	background-position: center;
+	 
+	margin-right: 50px;
 }
