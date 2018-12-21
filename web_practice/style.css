@@ -2,6 +2,7 @@
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -76,20 +77,25 @@ body {
 /*-------------------------- NAVIGATION BAR ---------------------------*/
 .nav-bar {
 	margin-left: 75px;
+    width: 1200px;
+    height: 48px;
 }
+
 .nav-bar li {
 	list-style: none; 
 }
 
 .nav-bar .main-bar {
 	float: left;
+	width: 100%;
 }
 
 .nav-bar .main-bar li {
 	float: left;
 	background-color: #ECECEC;
 	position: relative;
-	padding: 12px 22px 12px; 	
+	padding: 12px 22px 12px; 
+
 }
 
 .nav-bar .main-bar li a {
@@ -144,7 +150,16 @@ body {
 
 
 
+/*-------------------------------- MAIN CONTENT ---------------------------*/
 
+.main {
+	background-color: white; 
+	margin-top: 50px;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+
+}
 
 .main .landing-slider {
 	width: 1160px; 
@@ -153,8 +168,69 @@ body {
 	background-size: 100.34885245901638%;
     background-position: 0% 37.34939759036144%;
 	clear: both;
+	margin-bottom: 30px;
+}
+.main .contents {
+	display: flex; 
+	flex-direction: row;
+	font-family: 'Open Sans', sans-serif;
 
 }
+
+
+.main .contents .policies-col .first-policies-col .box{
+	background-color: #003387;
+	padding: 10px;
+	margin: 5px 0;
+	margin-right: 40px;
+	color: white;
+	width: 260px;
+}
+
+
+.main .contents .infos-col  h2{
+	width: 279.05px;
+	font-weight: 700;
+	color: #383838;
+	font-size: 30px;
+	line-height: 34px;
+}
+.main .contents .infos-col #security-notification #message{
+	margin-top: 17px;
+	margin-bottom: 17px;
+	font-size: 16px;
+	text-align: center; 
+} 
+.main .contents .infos-col #security-notification #message a{
+	color: #226EAD;
+	font-weight: bold; 
+}
+
+.main .contents .infos-col #chromebook p {
+	padding: 20px 0;
+}
+.main .contents .infos-col #chromebook #message2 {
+	height: 100px;
+	text-align: right; 
+}
+.main .contents .infos-col #chromebook #message2 div {
+	padding: 10px;
+}
+.main .contents .infos-col #chromebook #message2 div a{
+	font-weight: bold;
+	color: #226EAD;
+}
+
+
+
+#mission-img img{
+	width: 546px;
+	height: 470px;
+	margin-right: 35px;
+}
+
+
+
 
 .footer #footer-img {
 	width: 287.5px;
